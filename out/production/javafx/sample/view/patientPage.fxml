@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.PatientController">
+   <children>
+      <TableView fx:id="tableView" layoutX="32.0" layoutY="76.0" prefHeight="200.0" prefWidth="536.0">
+        <columns>
+          <TableColumn fx:id="notesColumn" prefWidth="340.0" text="Notes" />
+          <TableColumn fx:id="timeColumn" prefWidth="194.0" text="Time" />
+        </columns>
+      </TableView>
+      <Label fx:id="patientLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="23.0" prefHeight="24.0" prefWidth="287.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="406.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#requestHandler" prefHeight="30.0" prefWidth="162.0" text="Request an Appointemnt" />
+      <Hyperlink layoutX="32.0" layoutY="325.0" onMouseClicked="#logoutHandler" text="logout" />
+   </children>
+</AnchorPane>

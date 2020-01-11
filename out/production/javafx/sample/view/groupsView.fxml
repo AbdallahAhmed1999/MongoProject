@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="474.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.GroupController">
+   <children>
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="330.0">
+         <columns>
+            <TableColumn fx:id="groupName" prefWidth="121.0" text="Name" />
+            <TableColumn fx:id="groupViews" prefWidth="207.0" text="Views" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="24.0" prefHeight="30.0" prefWidth="110.0" text="User Groups" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="421.0" layoutY="121.0" prefHeight="121.0" prefWidth="159.0" />
+      <TextField fx:id="groupNameField" layoutX="421.0" layoutY="83.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="376.0" layoutY="87.0" text="Name : " />
+      <Label layoutX="377.0" layoutY="121.0" text="Views : " />
+      <Button layoutX="505.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#addGroupHandler" text="Add Group" />
+      <Button layoutX="25.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#backHandler" text="&lt; Back  " />
+      <Button layoutX="505.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#editHandler" prefHeight="25.0" prefWidth="75.0" text="Edit Group" />
+      <Button layoutX="499.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#deleteHandler" text="Delete Group" />
+   </children>
+</AnchorPane>

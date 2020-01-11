@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="662.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DoctorController">
+   <children>
+      <TableView fx:id="tableView1" layoutX="42.0" layoutY="110.0" onMouseClicked="#selectedPatientHandler" prefHeight="225.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="patientNameColumn" prefWidth="111.0" text="Name" />
+          <TableColumn fx:id="patientPhoneColumn" minWidth="0.0" prefWidth="169.0" text="Phone" />
+            <TableColumn fx:id="patientAgeColumn" prefWidth="58.0" text="Age" />
+            <TableColumn fx:id="patientUsernameColumn" prefWidth="177.0" text="Username" />
+        </columns>
+      </TableView>
+      <Label layoutX="258.0" layoutY="23.0" text="Patients">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="354.0" text="Patient Visits">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView2" layoutX="42.0" layoutY="386.0" prefHeight="200.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="visitNoteColumn" prefWidth="331.0" text="Visit Note" />
+          <TableColumn fx:id="visitTimeColumn" prefWidth="183.0" text="Time" />
+        </columns>
+      </TableView>
+      <Button layoutX="507.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#searchHandler" text="Search" />
+      <TextField fx:id="searchField" layoutX="343.0" layoutY="75.0" prefHeight="25.0" prefWidth="156.0" />
+      <Button layoutX="42.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#backHandler" text="&lt; Back  " />
+      <Button layoutX="462.0" layoutY="604.0" mnemonicParsing="false" onMouseClicked="#editHandler" text="Edit Visit Notes" />
+   </children>
+</AnchorPane>

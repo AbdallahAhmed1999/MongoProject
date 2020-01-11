@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="307.0" maxWidth="415.0" minHeight="307.0" minWidth="415.0" prefHeight="307.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AuthController">
+   <children>
+      <Button layoutX="236.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#CancelHandler" text="Cancel" />
+      <Button layoutX="300.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#LoginHandler" text="Login" />
+      <TextField fx:id="usernameField" layoutX="139.0" layoutY="105.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="27.0" prefHeight="51.0" prefWidth="231.0" text="Clinic Managment System" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="109.0" text="Username : " />
+      <Label layoutX="72.0" layoutY="154.0" text="Password  : " />
+      <PasswordField fx:id="passwordField" layoutX="140.0" layoutY="150.0" prefHeight="25.0" prefWidth="209.0" />
+      <Hyperlink layoutX="191.0" layoutY="185.0" onMouseClicked="#registerHandler" text="register" />
+      <Label layoutX="72.0" layoutY="188.0" text="if you are new patient " />
+      <CheckBox fx:id="isAdmin" layoutX="288.0" layoutY="188.0" mnemonicParsing="false" text="Admin" />
+   </children>
+</AnchorPane>

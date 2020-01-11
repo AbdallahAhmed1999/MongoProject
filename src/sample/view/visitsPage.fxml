@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="608.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.VisitsController">
+   <children>
+      <Label layoutX="352.0" layoutY="24.0" text="Visits">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="41.0" layoutY="101.0" prefHeight="221.0" prefWidth="669.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="122.0" text="Date &amp; Time" />
+          <TableColumn fx:id="nameColumn" prefWidth="137.0" text="Patient Name" />
+            <TableColumn fx:id="phoneColumn" prefWidth="118.0" text="Patient Phone" />
+            <TableColumn fx:id="notesColumn" prefWidth="289.0" text="Notes" />
+        </columns>
+      </TableView>
+      <JFXSlider fx:id="visitHour" blockIncrement="4.0" indicatorPosition="RIGHT" layoutX="82.0" layoutY="441.0" majorTickUnit="4.0" max="23.0" prefHeight="38.0" prefWidth="149.0" showTickLabels="true" showTickMarks="true" />
+      <DatePicker fx:id="visitDate" layoutX="82.0" layoutY="391.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="41.0" layoutY="395.0" prefHeight="17.0" prefWidth="37.0" text="Date : " />
+      <Label layoutX="41.0" layoutY="441.0" prefHeight="17.0" prefWidth="46.0" text="Hour :" />
+      <Label layoutX="37.0" layoutY="504.0" prefHeight="17.0" prefWidth="46.0" text="Minute :" />
+      <JFXSlider fx:id="visitMinute" blockIncrement="4.0" indicatorPosition="RIGHT" layoutX="82.0" layoutY="504.0" majorTickUnit="4.0" max="59.0" prefHeight="38.0" prefWidth="149.0" showTickLabels="true" showTickMarks="true" />
+      <Button layoutX="421.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#searchHandler" text="Search" />
+      <TextField fx:id="searchField" layoutX="261.0" layoutY="354.0" />
+      <ListView fx:id="patientListView" layoutX="261.0" layoutY="391.0" prefHeight="152.0" prefWidth="343.0" />
+      <Button layoutX="634.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#addVisitHandler" prefHeight="25.0" prefWidth="76.0" text="Add Visit" />
+      <Button layoutX="41.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#backHandler" text="&lt; Back  " />
+      <Button layoutX="634.0" layoutY="454.0" mnemonicParsing="false" onMouseClicked="#editVisitHandler" prefHeight="25.0" prefWidth="76.0" text="Edit Visit" />
+      <Button layoutX="634.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#deleteVisitHandler" text="Delete Visit" />
+   </children>
+</AnchorPane>

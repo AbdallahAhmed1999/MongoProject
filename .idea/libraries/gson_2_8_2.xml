@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="gson-2.8.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/sample/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/sample/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/sample/mongo-java-driver-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/sample/jfoenix-8.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

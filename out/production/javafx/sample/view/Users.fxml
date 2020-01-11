@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdminController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="265.0" layoutY="25.0" prefHeight="35.0" prefWidth="70.0" text="Users " textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="71.0" prefHeight="236.0" prefWidth="533.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="114.0" text="Name" />
+            <TableColumn fx:id="usernameColumn" prefWidth="126.0" text="Username" />
+          <TableColumn fx:id="emailColumn" prefWidth="196.0" text="Email" />
+            <TableColumn fx:id="groupColumn" minWidth="0.0" prefWidth="96.0" text="Group" />
+        </columns>
+      </TableView>
+      <Button layoutX="34.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#backHandler" text="&lt; Back  " />
+      <Label layoutX="34.0" layoutY="331.0" text="Name : " />
+      <TextField fx:id="nameField" layoutX="75.0" layoutY="327.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="36.0" layoutY="371.0" text="Email : " />
+      <TextField fx:id="usernameField" layoutX="335.0" layoutY="327.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="emailField" layoutX="75.0" layoutY="367.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="269.0" layoutY="331.0" text="Username : " />
+      <Label layoutX="271.0" layoutY="371.0" text="Password : " />
+      <PasswordField fx:id="passwordField" layoutX="335.0" layoutY="367.0" prefHeight="25.0" prefWidth="157.0" />
+      <Button layoutX="427.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#addUserHandler" text="Add User" />
+      <Label layoutX="31.0" layoutY="411.0" text="Group :" />
+      <ComboBox fx:id="groupBox" layoutX="75.0" layoutY="407.0" prefHeight="25.0" prefWidth="157.0" />
+      <Button layoutX="357.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#editHandler" text="Edit User" />
+      <Button layoutX="271.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#deleteHandler" text="Delete User" />
+      <Button layoutX="524.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#clearHandler" text="Clear" />
+   </children>
+</AnchorPane>
